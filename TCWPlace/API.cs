@@ -167,7 +167,7 @@
         /// <param name="delay"></param>
         /// <param name="retries"></param>
         /// <returns></returns>
-        public static async Task Defend(Func<Task> action, int delay = 1000, int retries = int.MaxValue)
+        public async Task Defend(Func<Task> action, int delay = 1000, int retries = int.MaxValue)
         {
             while (retries > 0)
             {

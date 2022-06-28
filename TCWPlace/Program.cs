@@ -31,13 +31,13 @@ await api.RenderLines(new List<string> { "Hello", "there" }, (0, 0), Figgle.Figg
 await api.RenderLinesFromFile(Path.Combine(Environment.CurrentDirectory, "file.txt"), (0, 0), Figgle.FiggleFonts.Banner, "ffffff");
 
 // Redraw your creation every second
-await API.Defend(() => api.RenderRectangle((0, 0), (10, 10), "00ff00"));
+await api.Defend(() => api.RenderRectangle((0, 0), (10, 10), "00ff00"));
 
 // Redraw your creation every second 10 times
-await API.Defend(() => api.RenderRectangle((0, 0), (10, 10), "00ff00"), retries: 10);
+await api.Defend(() => api.RenderRectangle((0, 0), (10, 10), "00ff00"), retries: 10);
 
 // Redraw your creation every 5 seconds 
-await API.Defend(() => api.RenderRectangle((0, 0), (10, 10), "00ff00"), delay: 5000);
+await api.Defend(() => api.RenderRectangle((0, 0), (10, 10), "00ff00"), delay: 5000);
 
 Console.WriteLine("Done!");
 Console.ReadKey();
