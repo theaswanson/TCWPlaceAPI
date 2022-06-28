@@ -12,5 +12,6 @@ namespace TCWPlace
         Task RenderText(string text, (int X, int Y) start, FiggleFont font, string color, string? backgroundColor = null);
         Task RenderLines(IEnumerable<string> lines, (int X, int Y) start, FiggleFont font, string color, string? backgroundColor = null);
         Task RenderLinesFromFile(string filePath, (int X, int Y) start, FiggleFont font, string color, string? backgroundColor = null);
+        Task Defend(Func<Task> action, int delay = 1000, int retries = int.MaxValue);
     }
 }
