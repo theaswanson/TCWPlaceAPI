@@ -1,6 +1,6 @@
 # TCWPlaceAPI
 
-A simple .NET API to interact with tcw_place.
+A simple .NET API to interact with [tcw_place](https://github.com/upitroma/tcw_place).
 
 ## Usage
 
